@@ -161,7 +161,7 @@ const Index = () => {
         <div className="container">
           <h2 className="font-display text-5xl md:text-6xl font-700 mb-14 text-center">Наши <span className="gradient-text">наставники</span></h2>
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Преподаватель */}
+            {/* Классный руководитель */}
             <div className="flex flex-col sm:flex-row gap-8 items-center sm:items-start p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-violet-400/40 transition-colors">
               <div className="shrink-0">
                 <div className="w-40 h-40 rounded-2xl overflow-hidden shadow-2xl shadow-violet-500/20">
@@ -169,7 +169,7 @@ const Index = () => {
                 </div>
               </div>
               <div>
-                <span className="text-violet-400 font-600 text-sm uppercase tracking-widest">Преподаватель спецдисциплин</span>
+                <span className="text-violet-400 font-600 text-sm uppercase tracking-widest">Классный руководитель · Преподаватель спецдисциплин</span>
                 <h3 className="font-display text-3xl font-700 mt-2 mb-3">Глухов Владимир Алексеевич</h3>
                 <p className="text-white/60 mb-5">Ведёт специальные дисциплины по профессии сварщика. Опытный наставник с глубокими знаниями производственных технологий.</p>
                 <div className="flex items-center gap-3 text-white/80">
