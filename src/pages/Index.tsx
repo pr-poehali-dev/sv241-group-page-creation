@@ -159,30 +159,36 @@ const Index = () => {
       {/* TEACHER */}
       <section id="teacher" className="py-24">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="aspect-[4/5] max-w-md rounded-[2rem] bg-gradient-to-br from-violet-500 via-pink-500 to-orange-500 flex items-center justify-center text-9xl shadow-2xl shadow-violet-500/30">
-                👩‍🏫
+          <h2 className="font-display text-5xl md:text-6xl font-700 mb-14 text-center">Наши <span className="gradient-text">наставники</span></h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Преподаватель */}
+            <div className="flex flex-col sm:flex-row gap-8 items-center sm:items-start p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-violet-400/40 transition-colors">
+              <div className="shrink-0">
+                <div className="w-40 h-40 rounded-2xl overflow-hidden shadow-2xl shadow-violet-500/20">
+                  <img src="https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/4a3b24d7-6756-4bcf-ada2-f2fb66a8e01f.jpg" alt="Глухов Владимир Алексеевич" className="w-full h-full object-cover object-top" />
+                </div>
               </div>
-              <div className="absolute -bottom-5 -right-2 md:right-10 px-6 py-3 rounded-2xl bg-white text-[#0d0d12] font-600 shadow-xl">
-                15 лет стажа
+              <div>
+                <span className="text-violet-400 font-600 text-sm uppercase tracking-widest">Преподаватель спецдисциплин</span>
+                <h3 className="font-display text-3xl font-700 mt-2 mb-3">Глухов Владимир Алексеевич</h3>
+                <p className="text-white/60 mb-5">Ведёт специальные дисциплины по профессии сварщика. Опытный наставник с глубокими знаниями производственных технологий.</p>
+                <div className="flex items-center gap-3 text-white/80">
+                  <Icon name="Phone" size={18} className="text-orange-400" />
+                  +7 (937) 105-80-12
+                </div>
               </div>
             </div>
-            <div>
-              <span className="text-violet-400 font-600 text-sm uppercase tracking-widest">Классный руководитель</span>
-              <h2 className="font-display text-5xl md:text-6xl font-700 mt-3 mb-5">Елена Сергеевна Кузнецова</h2>
-              <p className="text-white/60 text-lg mb-8">
-                Преподаватель спецдисциплин высшей категории. Помогает каждому студенту раскрыть потенциал и стать профессионалом своего дела.
-              </p>
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-3 text-white/80">
-                  <Icon name="Mail" size={20} className="text-orange-400" />
-                  e.kuznetsova@college.ru
+            {/* Мастер */}
+            <div className="flex flex-col sm:flex-row gap-8 items-center sm:items-start p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-orange-400/40 transition-colors">
+              <div className="shrink-0">
+                <div className="w-40 h-40 rounded-2xl bg-gradient-to-br from-orange-500 to-pink-500 flex items-center justify-center text-7xl shadow-2xl shadow-orange-500/20">
+                  👨‍🏭
                 </div>
-                <div className="flex items-center gap-3 text-white/80">
-                  <Icon name="Phone" size={20} className="text-orange-400" />
-                  +7 (900) 000-00-00
-                </div>
+              </div>
+              <div>
+                <span className="text-orange-400 font-600 text-sm uppercase tracking-widest">Мастер производственного обучения</span>
+                <h3 className="font-display text-3xl font-700 mt-2 mb-3">Маслиев Алексей Дмитриевич</h3>
+                <p className="text-white/60 mb-5">Руководит практическим обучением студентов. Обеспечивает освоение профессиональных навыков сварочного дела на производстве.</p>
               </div>
             </div>
           </div>
