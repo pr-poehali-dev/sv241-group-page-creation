@@ -175,8 +175,15 @@ const Index = () => {
         <div className="container">
           <h2 className="font-display text-5xl md:text-6xl font-700 mb-14 text-center">Жизнь <span className="gradient-text">группы</span></h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {['🏭', '⚙️', '🤝', '📐', '🔧', '🎓'].map((e, i) => (
-              <div key={i} className={`rounded-2xl bg-gradient-to-br ${students[i].color} aspect-video flex items-center justify-center text-6xl hover-scale cursor-pointer animate-scale-in`} style={{ animationDelay: `${i * 70}ms` }}>
+            {[
+              { e: '🏭', color: 'from-orange-400 to-red-500' },
+              { e: '⚙️', color: 'from-blue-400 to-cyan-500' },
+              { e: '🤝', color: 'from-violet-400 to-purple-600' },
+              { e: '📐', color: 'from-emerald-400 to-teal-500' },
+              { e: '🔧', color: 'from-pink-400 to-rose-500' },
+              { e: '🎓', color: 'from-amber-400 to-orange-500' },
+            ].map(({ e, color }, i) => (
+              <div key={i} className={`rounded-2xl bg-gradient-to-br ${color} aspect-video flex items-center justify-center text-6xl hover-scale cursor-pointer animate-scale-in`} style={{ animationDelay: `${i * 70}ms` }}>
                 {e}
               </div>
             ))}
