@@ -9,6 +9,11 @@ const students = [
   { name: 'Юрий Андреев', role: 'Студент', photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/2323624d-93ac-49c6-a0c7-0d8d3964b65b.jpg', color: 'from-violet-400 to-purple-600' },
   { name: 'Максим Архипов', role: 'Студент', photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/c454dfee-e782-40c9-a618-ddc6d63f0eea.jpg', color: 'from-emerald-400 to-teal-500' },
   { name: 'Иван Березовский', role: 'Студент', photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/7ab74127-4082-46b7-8bf2-6cec92ccbe3f.jpg', color: 'from-pink-400 to-rose-500' },
+  { name: 'Михаил Варков', role: 'Студент', photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/3b0c7064-dfb6-41f8-81b0-9dcaecfde3c3.jpg', color: 'from-amber-400 to-orange-500' },
+  { name: 'Виктор Волошин', role: 'Студент', photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/3ee8e37c-8752-4905-a8fb-d36a9a5e46c7.jpg', color: 'from-indigo-400 to-blue-600' },
+  { name: 'Владимир Гаврилов', role: 'Студент', photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/86920026-0cdc-4104-b959-7936ff8565d7.jpg', color: 'from-fuchsia-400 to-pink-600' },
+  { name: 'Никита Голоколенов', role: 'Студент', photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/bb28997d-3eaf-4c5f-8b71-395bdb3bbddf.jpg', color: 'from-cyan-400 to-teal-500' },
+  { name: 'Дмитрий Зуев', role: 'Студент', photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/1d5561a8-a5e0-4482-b4fc-80103aae869d.jpg', color: 'from-lime-400 to-green-500' },
 ];
 
 const skills = [
