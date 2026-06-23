@@ -4,14 +4,11 @@ import Icon from '@/components/ui/icon';
 const BANNER = 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/files/aae87194-5c3e-44de-9712-2fc10f876e44.jpg';
 
 const students = [
-  { name: 'Артём Власов', role: 'Староста', emoji: '🔥', color: 'from-orange-400 to-red-500' },
-  { name: 'Дмитрий Носов', role: 'Студент', emoji: '⚡', color: 'from-blue-400 to-cyan-500' },
-  { name: 'Иван Морозов', role: 'Студент', emoji: '🛠️', color: 'from-violet-400 to-purple-600' },
-  { name: 'Кирилл Белов', role: 'Студент', emoji: '💪', color: 'from-emerald-400 to-teal-500' },
-  { name: 'Никита Орлов', role: 'Студент', emoji: '🚀', color: 'from-pink-400 to-rose-500' },
-  { name: 'Сергей Зайцев', role: 'Студент', emoji: '⭐', color: 'from-amber-400 to-orange-500' },
-  { name: 'Павел Гущин', role: 'Студент', emoji: '🎯', color: 'from-indigo-400 to-blue-600' },
-  { name: 'Роман Лебедев', role: 'Студент', emoji: '🌟', color: 'from-fuchsia-400 to-pink-600' },
+  { name: 'Тимофей Абрамов', role: 'Студент', photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/8142a102-9d00-486a-a9d4-6d51ce44f2b0.jpg', color: 'from-orange-400 to-red-500' },
+  { name: 'Данил Алимов', role: 'Студент', photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/97e81bfc-31c3-4c87-a126-343d4657544b.jpg', color: 'from-blue-400 to-cyan-500' },
+  { name: 'Юрий Андреев', role: 'Студент', photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/2323624d-93ac-49c6-a0c7-0d8d3964b65b.jpg', color: 'from-violet-400 to-purple-600' },
+  { name: 'Максим Архипов', role: 'Студент', photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/c454dfee-e782-40c9-a618-ddc6d63f0eea.jpg', color: 'from-emerald-400 to-teal-500' },
+  { name: 'Иван Березовский', role: 'Студент', photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/7ab74127-4082-46b7-8bf2-6cec92ccbe3f.jpg', color: 'from-pink-400 to-rose-500' },
 ];
 
 const skills = [
@@ -97,15 +94,16 @@ const Index = () => {
             <h2 className="font-display text-5xl md:text-6xl font-700">Наши <span className="gradient-text">студенты</span></h2>
             <p className="text-white/50 max-w-sm">Дружная команда, в которой каждый — личность с характером.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {students.map((s, i) => (
               <div key={i} className="group relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 hover-scale animate-scale-in" style={{ animationDelay: `${i * 60}ms` }}>
-                <div className={`aspect-square bg-gradient-to-br ${s.color} flex items-center justify-center text-6xl`}>
-                  {s.emoji}
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img src={s.photo} alt={s.name} className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110" />
+                  <div className={`absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r ${s.color}`} />
                 </div>
-                <div className="p-4">
+                <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent pt-12">
                   <div className="font-600 text-lg leading-tight">{s.name}</div>
-                  <div className="text-sm text-white/50">{s.role}</div>
+                  <div className="text-sm text-white/60">{s.role}</div>
                 </div>
               </div>
             ))}
