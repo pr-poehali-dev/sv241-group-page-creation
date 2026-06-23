@@ -198,18 +198,21 @@ const Index = () => {
       {/* GALLERY */}
       <section id="gallery" className="py-24 bg-gradient-to-br from-[#15151d] to-[#0d0d12]">
         <div className="container">
-          <h2 className="font-display text-5xl md:text-6xl font-700 mb-14 text-center">Жизнь <span className="gradient-text">группы</span></h2>
+          <h2 className="font-display text-5xl md:text-6xl font-700 mb-4 text-center">Жизнь <span className="gradient-text">группы</span></h2>
+          <p className="text-center text-white/50 mb-14">Внеклассные мероприятия и яркие моменты</p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { e: '🏭', color: 'from-orange-400 to-red-500' },
-              { e: '⚙️', color: 'from-blue-400 to-cyan-500' },
-              { e: '🤝', color: 'from-violet-400 to-purple-600' },
-              { e: '📐', color: 'from-emerald-400 to-teal-500' },
-              { e: '🔧', color: 'from-pink-400 to-rose-500' },
-              { e: '🎓', color: 'from-amber-400 to-orange-500' },
-            ].map(({ e, color }, i) => (
-              <div key={i} className={`rounded-2xl bg-gradient-to-br ${color} aspect-video flex items-center justify-center text-6xl hover-scale cursor-pointer animate-scale-in`} style={{ animationDelay: `${i * 70}ms` }}>
-                {e}
+              { photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/b428ae74-aa78-4cce-b0af-5dc1abcb679d.jpg', caption: 'Репетиция перед выступлением' },
+              { photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/f94b4b47-9d29-4af0-b3b3-e3444cec8668.jpg', caption: 'Посадка туи — Варков и Свиридова' },
+              { photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/87840090-ca06-487d-bb48-402367a17205.jpg', caption: 'Варков М. на сцене — 23 февраля' },
+              { photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/a8ab61c9-9766-42a3-8f5b-eb39765580b6.jpg', caption: 'Посадка туи группы СВ-241' },
+              { photo: 'https://cdn.poehali.dev/projects/7786a37d-42cb-4e39-a49e-4d1afa002f07/bucket/43ee3789-6f66-470d-834c-59c8994dc28b.jpg', caption: 'Репетиция с гитарой в классе' },
+            ].map(({ photo, caption }, i) => (
+              <div key={i} className="group relative rounded-2xl overflow-hidden aspect-video hover-scale animate-scale-in" style={{ animationDelay: `${i * 70}ms` }}>
+                <img src={photo} alt={caption} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-sm font-500">{caption}</p>
+                </div>
               </div>
             ))}
           </div>
